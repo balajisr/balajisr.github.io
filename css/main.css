@@ -44,3 +44,56 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/******
+COMMON
+******/
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+	color: #111111;
+	font-family: 'Sen', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.main-container {
+    width: 90%;
+    margin: 0 auto; 
+
+}
+.about p {
+	margin: 1em 0;
+	font-size: 2em;
+}
+
+/******
+HEADER
+******/
+.type {
+	font-family: 'Righteous', cursive;
+	font-size: 1.8em;
+}
+
+/*********
+ANIMATION
+*********/
+.blink{
+    animation:blinker 1.2s infinite;
+}
+@keyframes blinker{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+
+/**************
+RESPONSIVENESS
+**************/
+@media only screen and (max-width:460px) {
+	header .logo .type, header nav{
+		text-align: center;
+	}
+}
